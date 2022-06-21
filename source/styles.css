@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+*{
+    font-family: 'Bree Serif',serif;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+   margin:0;
+   overflow-x: hidden;
+}
+ .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+ }
+ nav{
+    background-color: black;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space space-between;
+    align-items: center;
+ }
+ nav img{
+    width: 50px;
+    height: 50px;
+ }
+ .nav-links{
+    flex: 1;
+    text-align: right;
+ }
+ .nav-links ul li{
+    font-family: 'Bree Serif',serif;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+ }
+ .nav-links ul li a{
+    font-family: 'Bree Serif',serif;
+    color:white;
+    text-decoration: none;
+    font-size: 13px;
+ }
+
+ .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(51, 150, 64);
+    display: block;
+    border-radius: 12px;
+    margin: auto;
+    transition: 0.5s;
+ }
+ .nav-links ul li:hover::after{
+    width: 100%;
+ }
+ .text-box{
+    width: 90%;
+    color: white;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+ }
+ .text-box h1{
+    font-size: 62px;
+    font-family: 'Bree Serif',serif;
+ }
+ .text-box p{
+    margin: 10px 0 40px;
+    font-size: 24px;
+    font-family: 'Bree Serif',serif;
+    color: white;
+ }
+ .hero-btn{
+    font-family: 'Bree Serif',serif;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+ }
+ .hero-btn:hover{
+    border: 1px solid rgb(51, 150, 64);
+    background: rgb(51, 150, 64);
+    transition: 1s;
+ }
+ nav .fa-solid{
+    display: none;
+ }
+
+ 
+ 
+ /*----------Program----------------*/
+ 
+/* .program{
+   text-align: center;
+   margin-left: 100px;
+   display: inline-block;
+   justify-content: space-between;
+   padding: 12px 12px;
+   position: relative;
+   z-index: -1;
+ } */
+.program img{
+   width: 250px;
+   height: 250px;
+}
+ .program-col{
+   display: inline-block;
+   padding: 10px 10px;
+   border: 4px solid black;
+   border-radius: 10px;
+ }
+
+
+ 
+
+
+ /*Contact Section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index:-1;
+    opacity: 1.7;
+    background: url('cont.webp')
+    /*image-repeat:no-repeat center center/cover ;*/
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size:1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif',serif;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/*Utility Class*/
+.h-primary{
+    font-family:'Bree Serif',serif ;
+    font-size:3.0rem;
+    padding:12px;
+}
+.h-secondary{
+    font-family: 'Bree Serif',serif;
+    font-size: 2.0rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+
+/* changes */
+.about{
+  
+   margin-top: 10px;
+   text-align: center;
+   margin-left: 100px;
+   display: inline-block;
+   justify-content: space-between;
+
+   
+   padding: 12px 12px;
+   position: relative;
+   z-index: -1;
+   
+}
+.program{
+   display:inline-block;
+   text-align: center;
+   margin-left:230px;
+}
+.headings{
+   font-size: 60px;
+}
+.quote{
+   font-size: 40px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.program-col{
+   position: relative;
+   background-color:rgb(51, 150, 64);
+}
+
+
+
+
+
+
